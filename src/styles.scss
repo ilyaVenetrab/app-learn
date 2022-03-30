@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.d-flex {
+  display: flex;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.j-content-between {
+  justify-content: space-between;
+}
+
+.center-between {
+  @extend .d-flex;
+  @extend .a-items-center;
+  @extend .j-content-between;
+}
+
+.text-center {
+  text-align: center;
+}

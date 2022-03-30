@@ -1,0 +1,14 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer
+    #drawer
+    mode="side"
+    class="example-sidenav"
+  >Drawer content</mat-drawer>
+  <app-header
+    [title]="title"
+    [drawer]="drawer"
+  ></app-header>
+
+  <ng-content select="[userFormTmpl]"></ng-content>
+  <ng-content select="[userTmpl]"></ng-content>
+</mat-drawer-container>

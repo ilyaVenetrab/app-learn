@@ -1,0 +1,55 @@
+<form
+  action=""
+  class="user-form"
+  [formGroup]="form"
+>
+  <mat-grid-list cols="2" rowHeight="2:0.75">
+    <mat-grid-tile>
+      <mat-form-field appearance="outline">
+        <mat-label>User Name</mat-label>
+        <input
+          matInput
+          placeholder="User Name"
+          formControlName="name"
+        >
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field appearance="outline">
+        <mat-label>Your name in the game</mat-label>
+        <input
+          matInput
+          placeholder="Your name in the game"
+          formControlName="username"
+        >
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          placeholder="Email"
+          formControlName="email"
+        >
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field appearance="outline">
+        <mat-label>Website</mat-label>
+        <input
+          matInput
+          placeholder="Website"
+          formControlName="website"
+        >
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <div class="text-center">
+    <button mat-raised-button
+            color="primary"
+            (click)="submit()"
+    >Add User</button>
+  </div>
+</form>
